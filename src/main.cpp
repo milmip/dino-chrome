@@ -1,5 +1,5 @@
 /*
-Source code of DINOCHROME by MilMip
+Source code of DINOCHROME (lab) by MilMip
 start 3.4.24
 
 lib doc:
@@ -17,7 +17,7 @@ int main()
 {
     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
     sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    shape.setFillColor(sf::Color::Red);
 
     while (window.isOpen())
     {
@@ -33,7 +33,6 @@ int main()
         window.display();
     }
 
-    std::cout << "loaded\n";
 
     return 0;
 }
