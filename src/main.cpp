@@ -7,17 +7,23 @@ https://www.sfml-dev.org/tutorials/2.6/start-linux.php
 https://www.sfml-dev.org/tutorials/2.6/
 
 compil command:
-cd bin && g++ -c ../src/main.cpp && g++ main.o -o prog -lsfml-graphics -lsfml-window -lsfml-system  && cd .. && bin/prog
+cd bin && g++ -c ../src/*.cpp && g++ *.o -o prog -lsfml-graphics -lsfml-window -lsfml-system  && ./prog && cd .. || cd ..
 */
 
 #include <iostream>
 #include <SFML/Graphics.hpp>
+
+#include "../include/scene.hpp"
+#include "../include/sprite.hpp"
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
     sf::CircleShape shape(100.f);
     shape.setFillColor(sf::Color::Green);
+
+    Scene s;
+    Sprite sp;
 
     while (window.isOpen())
     {
