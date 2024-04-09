@@ -1,7 +1,7 @@
 #ifndef __PL__
 #define __PL__
 
-enum pl
+enum PlayerLocation
 {
 	start,
 	playing,
