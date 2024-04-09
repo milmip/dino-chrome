@@ -1,12 +1,12 @@
 #include "../include/scene.hpp"
-#include <iostream>
+#include "../include/pl.hpp"
 
 Scene::Scene()
 {
-	std::cout << "Création d'une " << this << "\n";
+	_playerLocation = pl::start;
 }
 
-Scene::~Scene()
+pl Scene::getPlayerLocation()
 {
-	std::cout << "Destruction d'une " << this << "\n";
+	return _playerLocation;
 }
